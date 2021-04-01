@@ -1,0 +1,115 @@
+//Colors Web
+$colorOne: #5BC7D7;
+$colorTwo: #F1635F;
+$colorBg: #292828;
+$colorText: #ffffff;
+$colorTextGhost: rgba(255, 255, 255, 0.2);
+$colorTextGhost2: rgba(255, 255, 255, 0.5);
+
+//fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+//custom tags & elments
+
+h1, h2, h3,h4,
+a {
+    font-family: 'Quantico', sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding:0;
+}
+
+a{
+   text-decoration: none;
+   color: $colorText;
+}
+
+span{
+    color:$colorOne;
+}
+
+
+//buttoms
+
+.btn{
+    font-weight: 700;
+    padding: 0.3em 10%;
+}
+
+.btnNav{
+    padding: 0.3em 70px;
+}
+
+.btnFirst{
+    background:$colorOne;
+    border: 2px solid $colorOne;
+    color: $colorBg;
+}
+
+.btnGhost{
+    border: 2px solid $colorOne;
+}
+
+.btnSecond{
+    background: $colorTwo;
+}
+
+//product card
+.product{
+    position: relative;
+    width: 448px;
+    height: 340px;
+}
+
+.img-product{
+   position: relative;
+   max-width: 100%;
+}
+
+.product::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 448px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(41, 40, 40, 0) 0%, rgba(41, 40, 40, 0.88) 100%);
+    z-index: 1;
+}
+
+.img-descript{
+    position:absolute;
+    bottom: 30px;
+    left: 16px;
+    z-index: 2;
+    h3{
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-bottom: 16px;
+    }
+    hr{
+        width: 190px;
+    }
+}
+
+
+
+// img background text
+
+.secEcommerceTextBackground{
+    background-image: url(../img/TEXT_BG.png);
+}
+
+
+.secLandingTextBackground{
+    background-image: url(../img/TXT-BG.png);
+}
+
+
+
+
+

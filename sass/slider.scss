@@ -1,0 +1,62 @@
+img {
+    vertical-align: middle;
+  }
+  
+  .slide{
+    position: relative;
+    max-width: 600px;
+    margin-top: 86px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .row{
+    margin-top: 31px;
+  }
+
+  .littel-img{
+      display:flex;
+      justify-content: space-between;
+  }
+  
+
+  .cursor {
+    cursor: pointer;
+  }
+ 
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    color: $colorOne;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .prev{
+    left: -35px;
+  }
+  
+  
+  .next {
+    right: -35px;
+  }
+  
+
+  .column {
+    width: 16.66%;
+  }
+  
+ 
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
